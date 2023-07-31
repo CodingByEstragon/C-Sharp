@@ -1,22 +1,20 @@
-using Daten;
-
 namespace Ablauf
 {
     class Program
     {
-        // einzeiliger Kommentar
-
-        /*
-         mehrzeiliger
-        Kommentar
-         */
-
-
         /// <summary>
-        /// Dokumentationskommentar
+        /// Main Methode
         /// </summary>
         static void Main()
         {
+            // Das ist ein einzeiliger Kommentar
+            Console.Write("Hello\n");
+
+            /*
+             * Das ist ein mehrzeiliger
+             * Kommentar
+             */
+            Console.Write("World");
         }
     }
 }
