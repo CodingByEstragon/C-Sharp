@@ -4,10 +4,8 @@ namespace Ablauf
     {
         static void Main()
         {
-            Console.Write("Hello ");
-            Console.WriteLine("World");
-            Console.Write("Welcome\n");
-            Console.WriteLine("to my Tutorial");
+            Console.Write("Hello\n");
+            Console.Write("World");
         }
     }
 }
