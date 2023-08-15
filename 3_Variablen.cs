@@ -1,22 +1,25 @@
-using Daten;
-
 namespace Ablauf
 {
     class Program
     {
         static void Main()
         {
-            // initialisieren
-            int zahl = 2;
+            // Variable initialisieren
+            int zahl;
 
-            // deklarieren
-            int zahl2;
+            // Variable deklarieren
+            zahl = 2;
 
-            // zuweisen
-            zahl2 = 12;
+            zahl = 12;
 
-            // Ausgabe
-            Console.Write(zahl + zahl2);
+            zahl = 3;
+
+
+
+            Console.WriteLine(zahl);
+
+            int zahl2 = 24;
+            Console.WriteLine(zahl2);
         }
     }
 }
