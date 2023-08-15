@@ -1,36 +1,42 @@
-using Daten;
-
 namespace Ablauf
 {
     class Program
     {
         static void Main()
         {
-            // Integer - ganze Zahl
-            int i = 7;
+            // Ganze Zahlen
+            //                         Wertebereich
+            byte bZahl = 127;       // 0 bis 255
+            sbyte sZahl = 28;       // -128 bis 127
+            short shZahl = 12;      // -32768 bis 32.767
+            ushort usZahl = 126;    // 0 bis 65.535
+            int zahl = -12;         // -2.147.483.648 bis 2.147.483.647
+            uint uZahl = 89;        // 0 bis 4.294.967.296
+            long lZahl = 128;       // -9.223.372.036.854.775.808 bis 9.223.372.036.854.775.807
+            ulong ulZahl = 289;     // 0 bis 18.446.744.073.709.551.615   
 
-            // double - Gleitpunktzahl
-            double d = 2.7;
+            // Gleitkommazahlen
+            //                         Wertebereich
+            float f = 5.4f;         // -3,402823x10^38 bis 3,402823x10^38
+            double d = 4.9;         // -1,79769313486232x10^308 bis 1,79769313486232x10^308
+            decimal dc = 7.5M;      // (-7,9x10^28 bis 7,9x10^28) / 10x10^(0 bis 28)
 
-            // float - Gleitpunktzahl
-            float f = 4.2f;
+            // Wahrheitswert
+            bool auto1 = true;
+            bool auto2 = false;
 
-            // string - Zeichenkette
-            string str = "Das ist ein Text";
-
-            // character - einzelne Zeichen
+            // einzelne Zeichen
             char c = 'a';
 
-            // boolean - Wahrheitswert
-            bool b = true;
+            // Zeichenketten
+            string s = "Hallo";
 
-            Console.WriteLine(i);
-            Console.WriteLine(d);
-            Console.WriteLine(f);
-            Console.WriteLine(str);
-            Console.WriteLine(c);
-            Console.WriteLine(b);
+            object obj = new object();
+            obj = "Hello";
 
+            object obj2 = 12.7f;
+
+            Console.WriteLine(obj2);
         }
     }
 }
