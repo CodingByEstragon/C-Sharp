@@ -4,20 +4,30 @@ namespace Ablauf
     {
         static void Main()
         {
-            int number1 = 7;
-            int number2 = 12;
-            Console.WriteLine(number1);
-            Console.WriteLine(number2);
+            int zahl1 = 8;
+            int zahl2 = 12;
+            Console.WriteLine("erste Zahl: " + zahl1);
+            Console.WriteLine("zweite Zahl: " + zahl2);
 
-            number1 = 9;
-            number2 = 15;
-            Console.WriteLine(number1 + number2);
-            Console.WriteLine(number1 - number2);
+            int zwsumme1 = zahl1 + zahl2;
+            Console.WriteLine("Addition: " + zwsumme1);
 
-            number1 = 12;
-            number2 = 3;
-            Console.WriteLine(number1 * number2);
-            Console.WriteLine(number1 / number2);
+            Console.WriteLine();
+
+            zahl1 = 9;
+            zahl2 = 4;
+            Console.WriteLine("erste Zahl: " + zahl1);
+            Console.WriteLine("zweite Zahl: " + zahl2);
+
+            int zwsumme2 = zahl1 - zahl2;
+            Console.WriteLine("Subtraktion: " + zwsumme2);
+
+            Console.WriteLine();
+
+            int summe1 = zwsumme1 * zwsumme2;
+            int summe2 = zwsumme1 / zwsumme2;
+            Console.WriteLine("Multiplikation: " + summe1);
+            Console.WriteLine("Division: " + summe2);
         }
     }
 }
