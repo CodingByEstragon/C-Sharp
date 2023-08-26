@@ -6,16 +6,19 @@ namespace Ablauf
         {
             // implizite Konvertierung
             int zahl = 3;
-            Console.WriteLine("Ganze Zahl: " + zahl);
             zahl = 6;
+            Console.WriteLine("Ganze Zahl: " + zahl);
             double zahl2 = zahl;
-            zahl2 = 4.7;
-            Console.WriteLine("Gleitpunktzahl: " + zahl2);
+            zahl2 = 12.4;
+            Console.WriteLine("Gleitkommazahl: " + zahl2);
+
+            Console.WriteLine();
 
             // explizite Konvertierung
-            double number = 3.7;
-            int number2 = (int)number;
-            Console.WriteLine("Ganze Zahl: " + number2);
+            double zahl3 = 3.7;
+            Console.WriteLine("Gleitkommazahl: " + zahl3);
+            int zahl4 = (int)zahl3;
+            Console.WriteLine("Ganze Zahl: " + zahl4);
         }
     }
 }
