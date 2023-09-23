@@ -4,17 +4,32 @@ namespace Ablauf
     {
         static void Main()
         {
+            // logische Operatoren
+
+            //  != ---> "ungleich"
+            //  == ---> "2 Werte vergleichen"
+            //   < ---> "kleiner als"
+            //   > ---> "größer als"
+            //  <= ---> "kleiner gleich"
+            //  >= ---> "größer gleich"
+            //  && ---> "Und Operator"
+            //  || ---> "Oder Operator"
+
             Console.WriteLine("Gib dein Alter ein: ");
-            int age = Convert.ToInt32(Console.ReadLine());
-            
-            if(age < 12) {
+            int alter = Convert.ToInt32 (Console.ReadLine());
+
+            if(alter < 12)
+            {
                 Console.WriteLine("Du bist ein Kind");
             }
-            else if(age >= 12 && age <= 17) {
-                Console.WriteLine("Du bist ein Jugendlicher");
+            else if(alter >= 12 && alter <= 17)
+            {
+                Console.WriteLine("Du bist jugendlich");
             }
             else
-                Console.WriteLine("Du bist Erwachsen");
+            {
+                Console.WriteLine("Du bist erwachsen");
+            }
         }
     }
 }
