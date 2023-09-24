@@ -21,14 +21,14 @@ namespace Ablauf
             Console.WriteLine("------------------------------");
 
             // Anwendungsbeispiel: gerade und ungerade Zahl
-            Console.WriteLine("Gib die erste Zahl ein: ");
+            Console.WriteLine("Gib die erste zahl ein: ");
             int number1 = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("Gib die zweite Zahl ein: ");
+
+            Console.WriteLine("Gib die zweite zahl ein: ");
             int number2 = Convert.ToInt32(Console.ReadLine());
             int modulo = number1 % number2;
 
-            if(modulo % 2 == 0)
+            if (modulo % 2 == 0)
             {
                 Console.WriteLine("gerade Zahl: " + modulo);
             }
@@ -36,7 +36,6 @@ namespace Ablauf
             {
                 Console.WriteLine("ungerade Zahl: " + modulo);
             }
-
         }
     }
 }
