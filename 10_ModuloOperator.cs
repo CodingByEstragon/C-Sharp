@@ -20,7 +20,7 @@ namespace Ablauf
 
             Console.WriteLine("------------------------------");
 
-            // Anwendungsbeispiel
+            // Anwendungsbeispiel: gerade und ungerade Zahl
             Console.WriteLine("Gib die erste Zahl ein: ");
             int number1 = Convert.ToInt32(Console.ReadLine());
             
