@@ -4,15 +4,44 @@ namespace Ablauf
     {
         static void Main()
         {
-            Console.WriteLine("Gib ein Zahl ein: ");
-            int counter = Convert.ToInt32(Console.ReadLine());
+            // Grundgerüst einer while Schleife
+            //Intialisierung;
+            //do
+            //{
+            //    Ausgabe;
+            //    Variablenveränderung;
+            //} while (Bedingung);
 
-            int num = 0;
-            do {
-                Console.WriteLine(num);
-                num++;
-            }
-            while (num < counter);
+            // Endlosschleife
+            //int anzahl = 5;
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine(i);
+            //} while (i < anzahl);
+
+            // einfach while Schleife
+            //int anzahl = 5;
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //} while (i < anzahl);
+
+            // Anwendungsbeispiel for Schleife in while Schleife umschreiben
+            int zwsumme = 0;
+            int i = 0;
+            do
+            {
+                Console.WriteLine("Gib eine Zahl ein: ");
+                int zahl = Convert.ToInt32(Console.ReadLine());
+
+                //zwsumme += zahl;
+                zwsumme = zwsumme + zahl;
+                Console.WriteLine("Summe: " + zwsumme);
+                i++;
+            } while (i < 4);
         }
     }
 }
