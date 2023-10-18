@@ -8,7 +8,7 @@ namespace Ablauf
             //Intialisierung;
             //do
             //{
-            //    Ausgabe;
+            //    Anweisung;
             //    Variablenveränderung;
             //} while (Bedingung);
 
