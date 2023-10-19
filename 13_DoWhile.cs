@@ -4,8 +4,8 @@ namespace Ablauf
     {
         static void Main()
         {
-            // Grundgerüst einer while Schleife
-            //Intialisierung;
+            // Grundgerüst einer Do While Schleife
+            //Initialisierung;
             //do
             //{
             //    Anweisung;
@@ -13,35 +13,52 @@ namespace Ablauf
             //} while (Bedingung);
 
             // Endlosschleife
-            //int anzahl = 5;
             //int i = 0;
             //do
             //{
             //    Console.WriteLine(i);
-            //} while (i < anzahl);
+            //    // Variablenveränderung
+            //} while (i < 5);
 
-            // einfach while Schleife
-            //int anzahl = 5;
+            // einfach Do While Schleife
+            //int anzahl = 7;
+            //int zahl = 0;
+            //do
+            //{
+            //    Console.WriteLine(zahl);
+            //    zahl++;
+            //} while (zahl < anzahl);
+
+            // Anwendungsbeispiel while Schleife in do while Schleife umschreiben
+            //int zwsumme = 0;
+
             //int i = 0;
             //do
             //{
-            //    Console.WriteLine(i);
+            //    Console.WriteLine("Gib eine Zahl ein: ");
+            //    int zahl = Convert.ToInt32(Console.ReadLine());
+
+            //    //zwsumme += zahl;
+            //    zwsumme = zwsumme + zahl;
+            //    Console.WriteLine("Summe: " + zwsumme);
             //    i++;
-            //} while (i < anzahl);
+            //} while (i < 4);
 
-            // Anwendungsbeispiel for Schleife in while Schleife umschreiben
-            int zwsumme = 0;
+            // Durschnitt berechnen
+            double zwsumme = 0.0;
+            int anzahl = 5;
+
             int i = 0;
             do
             {
                 Console.WriteLine("Gib eine Zahl ein: ");
-                int zahl = Convert.ToInt32(Console.ReadLine());
+                double zahl = Convert.ToDouble(Console.ReadLine());
 
-                //zwsumme += zahl;
-                zwsumme = zwsumme + zahl;
-                Console.WriteLine("Summe: " + zwsumme);
+                zwsumme += zahl;
                 i++;
-            } while (i < 4);
+                Console.WriteLine("Durchschnitt: " + zwsumme / anzahl);
+
+            } while(i < anzahl);
         }
     }
 }
