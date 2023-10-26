@@ -1,1 +1,0 @@
-// Schleife mit If Bedingung
